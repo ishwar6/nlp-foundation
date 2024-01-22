@@ -53,7 +53,22 @@ FilteredWords =  ['This', '22nd', 'Jan', '2023', ':', 'Happy', 'new', 'Shri', 'R
 
 ########################################## STEP - 3 ######################################################
 # 3. Stemming and Lemmatization
+
+stemmer = PorterStemmer()
+stemmed_words = [stemmer.stem(word) for word in tokens]
+
+
+STEMS = ['thi', '22nd', 'jan', '2023', ':', 'happi', 'new', 'shri', 'ram', 'mandir', 'ayodhya', '.', 
+         'it', 'astound', 'architectur', 'set', 'impress', 'anyon', 'pay', 'visit', '.', 'glad', 'receiv', 'shri', 'ram', '’', 'bless', '.']
+
+
 # Stemming: Reducing words to their base or root form. It's a crude heuristic that chops off the ends of words.
+# When Not to Use Stemming
+# In tasks requiring high accuracy and context understanding, like sentiment analysis. Stemming might oversimplify and lose context.
+# When the application involves understanding the meaning of the word accurately (e.g., language translation).
+
+
+
 # Lemmatization: Similar to stemming, but brings context to the words. It links words with similar meaning to one word.
 
 # Lemmatization
