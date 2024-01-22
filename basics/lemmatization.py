@@ -21,6 +21,9 @@ from nltk import pos_tag, word_tokenize
 nltk.download('averaged_perceptron_tagger')
 
 
+# It is based on the perceptron algorithm, a type of linear classifier used in supervised learning. The "averaged" part of the name refers to the way the algorithm computes its weights during training.
+# Instead of relying on the weights from the final iteration of training, it calculates the average weights across all iterations
+
 # Function to convert NLTK's POS tags to WordNet's format
 def get_wordnet_pos(tag):
     if tag.startswith('J'):
