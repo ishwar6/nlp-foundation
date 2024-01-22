@@ -25,6 +25,10 @@ nltk.download('averaged_perceptron_tagger')
 # Instead of relying on the weights from the final iteration of training, it calculates the average weights across all iterations
 
 # Function to convert NLTK's POS tags to WordNet's format
+
+# The purpose of this function in an NLP context, especially when using NLTK for lemmatization, 
+# is to ensure that the correct lexical category (noun, verb, adjective, adverb) is used when reducing a word to its base or dictionary form (lemma). 
+# This is important because the lemma of a word can change depending on its part of speech. 
 def get_wordnet_pos(tag):
     if tag.startswith('J'):
         return wordnet.ADJ
