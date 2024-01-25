@@ -8,7 +8,6 @@
 # Combining POS Tagging with Lemmatization: In advanced NLP tasks, it's common to first tag words with their POS and then lemmatize them using these tags.
 # This approach ensures that the lemmatization process takes into account the context and the role of each word in a sentence, leading to more accurate results.
 
-
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 from nltk import pos_tag, word_tokenize
