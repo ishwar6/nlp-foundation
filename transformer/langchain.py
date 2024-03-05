@@ -8,7 +8,6 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_pinecone import PineconeVectorStore
 
-
 PINECONE_API_KEY=''
 OPENAI_API_KEY=''
 
