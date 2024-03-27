@@ -4,6 +4,7 @@ import torch.nn.functional as F
 import numpy as np
 import math
 
+
 class SelfAttention(nn.Module):
     def __init__(self, embed_size, heads):
         super(SelfAttention, self).__init__()
