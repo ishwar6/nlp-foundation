@@ -17,7 +17,6 @@ class RNNModel(nn.Module):
         return torch.zeros(1, self.hidden_size)
 
 
-
 def train(input_tensor, target_tensor, rnn, optimizer, criterion):
     hidden = rnn.initHidden()
     rnn.zero_grad()
