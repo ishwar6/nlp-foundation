@@ -14,7 +14,6 @@ from nltk import pos_tag, word_tokenize
 # The averaged_perceptron_tagger in NLTK (Natural Language Toolkit) is a specific type of part-of-speech (POS) tagger. 
 # It uses the averaged perceptron algorithm to assign POS tags to words in a text. 
 
-
 nltk.download('averaged_perceptron_tagger')
 
 
