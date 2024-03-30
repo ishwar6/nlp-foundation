@@ -88,7 +88,6 @@ Lemmatized_Words= ['This', '22nd', 'Jan', '2023', ':', 'Happy', 'new', 'Shri', '
 # It's the process of labeling each word in a sentence with its appropriate part of speech, such as noun, verb, adjective, etc.
 tagged = pos_tag(filtered_words)
 
-
 Tagged= [('This', 'DT'), ('22nd', 'CD'), ('Jan', 'NNP'), ('2023', 'CD'), (':', ':'), ('Happy', 'JJ'), ('new', 'JJ'),
           ('Shri', 'NNP'), ('Ram', 'NNP'), ('Mandir', 'NNP'), ('Ayodhya', 'NNP'), ('.', '.'),
             ('Its', 'PRP$'), ('astounding', 'JJ'), ('architecture', 'NN'), ('set', 'VBN'), ('impress', 'JJ'), ('anyone', 'NN'),
